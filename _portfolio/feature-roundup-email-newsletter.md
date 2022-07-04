@@ -1,6 +1,7 @@
 ---
 title: Feature roundup email newsletter
 date: 2018-06-01
+order: 35
 featured: false
 internal_only: false
 category: General

@@ -1,6 +1,7 @@
 ---
 title: Agile transformation supporting resources
 date: 2021-07-01
+order: 15
 featured: false
 internal_only: true
 category: General

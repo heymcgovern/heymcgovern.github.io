@@ -1,9 +1,9 @@
 ---
 title: HR and legal policy review
 date: 2021-05-01
+order: 95
 featured: false
 internal_only: true
-order:
 category: General
 customer: Lockwood Publishing
 description: >

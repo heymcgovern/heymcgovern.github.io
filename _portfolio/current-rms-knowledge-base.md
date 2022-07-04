@@ -1,6 +1,7 @@
 ---
 title: Current RMS guides
 date: 2019-06-01
+order: 50
 featured: true
 internal_only: false
 category: Knowledge Base

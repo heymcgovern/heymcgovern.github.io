@@ -1,6 +1,7 @@
 ---
 title: In-game Shop documentation
 date: 2022-02-01
+order: 40
 featured: false
 internal_only: true
 category: Technical

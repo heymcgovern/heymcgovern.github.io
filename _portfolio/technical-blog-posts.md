@@ -1,6 +1,7 @@
 ---
 title: Technical blog posts
 date: 2019-06-01
+order: 20
 customer: Current RMS
 featured: false
 internal_only: false

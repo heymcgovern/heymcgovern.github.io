@@ -1,6 +1,7 @@
 ---
 title: Lua scripted API docs
 date: 2022-04-01
+order: 10
 featured: true
 internal_only: true
 category: API

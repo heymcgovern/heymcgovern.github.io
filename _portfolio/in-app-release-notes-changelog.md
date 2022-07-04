@@ -1,6 +1,7 @@
 ---
 title: In-app release notes
 date: 2018-01-01
+order: 25
 featured: false
 internal_only: false
 category: General

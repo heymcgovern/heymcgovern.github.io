@@ -21,28 +21,30 @@ plugins:
 collections:
   # Manually ordered this collection so I can push up stuff that's more
   # interesting. Also make sure items slot together nicely.
+  # UPDATE: Manual ordering only supported by Jekyll 4; GitHub Pages uses 3.9.x.
+  # Added a `order` to front matter, then sorted the loop in the template.
   portfolio:
     output: true
-    order:
-      - frinkiac-rest-api.md
-      - lua-scripted-api-documentation.md
-      - agile-transformation-resources.md
-      - technical-blog-posts.md
-      - in-app-release-notes-changelog.md
-      - liquid-syntax-reference.md
-      - feature-roundup-email-newsletter.md
-      - game-shop-documentation.md
-      - lua-tool-knowledge-base.md
-      - current-rms-knowledge-base.md
-      - character-art-pipeline-documentation.md
-      - covid-19-comms.md
-      - current-rms-support-videos.md
-      - new-tech-workshops.md
-      - lockwood-intranet.md
-      - product-pitches-user-stories.md
-      - it-support-guides.md
-      - internal-training-courses.md
-      - policies.md
-      - tech-writing-portfolio.md
-      - ui-api.md
-      - new-app-release.md
+    # order:
+    #   - frinkiac-rest-api.md # 5
+    #   - lua-scripted-api-documentation.md # 10
+    #   - agile-transformation-resources.md # 15
+    #   - technical-blog-posts.md # 20
+    #   - in-app-release-notes-changelog.md # 25
+    #   - liquid-syntax-reference.md # 30
+    #   - feature-roundup-email-newsletter.md # 35
+    #   - game-shop-documentation.md # 40
+    #   - lua-tool-knowledge-base.md # 45
+    #   - current-rms-knowledge-base.md # 50
+    #   - character-art-pipeline-documentation.md # 55
+    #   - covid-19-comms.md # 60
+    #   - current-rms-support-videos.md # 65
+    #   - new-tech-workshops.md # 70
+    #   - lockwood-intranet.md # 75
+    #   - product-pitches-user-stories.md # 80
+    #   - it-support-guides.md # 85
+    #   - internal-training-courses.md # 90
+    #   - policies.md # 95
+    #   - tech-writing-portfolio.md # 100
+    #   - ui-api.md # 105
+    #   - new-app-release.md # 110

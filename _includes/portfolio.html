@@ -1,7 +1,8 @@
 <div class="py-5 bg-light">
   <div class="container">
     <div class="row g-3" data-masonry='{"percentPosition": true }'>
-      {% for item in site.portfolio %}
+      {% assign portfolio_items = site.portfolio | sort: "order" %}
+      {% for item in portfolio_items %}
         {% if item.featured %}
           <div class="col-lg-8 col-md-12">
             <div class="card">

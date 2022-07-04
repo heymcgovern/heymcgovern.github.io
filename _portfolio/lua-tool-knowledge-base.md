@@ -1,6 +1,7 @@
 ---
 title: Scripted content platform knowledge base
 date: 2021-10-01
+order: 45
 featured: false
 internal_only: true
 category: Developer

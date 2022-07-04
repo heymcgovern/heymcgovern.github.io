@@ -1,6 +1,7 @@
 ---
 title: Current RMS video catalog
 date: 2020-01-01
+order: 65
 featured: false
 internal_only: false
 category: Videos

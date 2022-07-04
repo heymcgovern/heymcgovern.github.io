@@ -1,9 +1,9 @@
 ---
 title: Life at Lockwood intranet
 date: 2021-02-01
+order: 75
 featured: true
 internal_only: true
-order:
 customer: Lockwood Publishing
 description: >
   A central location for everything about the company, so we could continue to scale and work together effectively.

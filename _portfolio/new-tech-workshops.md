@@ -1,6 +1,7 @@
 ---
 title: New tech workshops
 date: 2022-04-01
+order: 70
 featured: false
 internal_only: true
 category: General

@@ -1,6 +1,7 @@
 ---
 title: Liquid and template code reference
 date: 2020-11-01
+order: 30
 featured: true
 internal_only: false
 category: API

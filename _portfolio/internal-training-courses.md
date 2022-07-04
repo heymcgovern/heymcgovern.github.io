@@ -1,9 +1,9 @@
 ---
 title: Training courses for new starters
 date: 2019-12-01
+order: 90
 featured: false
 internal_only: true
-order:
 category: Training
 customer: Current RMS
 description: >

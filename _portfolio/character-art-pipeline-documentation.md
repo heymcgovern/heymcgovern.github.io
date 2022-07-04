@@ -1,6 +1,7 @@
 ---
 title: Character Art pipeline docs
 date: 2021-11-01
+order: 55
 featured: false
 internal_only: true
 category: Technical

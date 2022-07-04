@@ -1,6 +1,7 @@
 ---
 title: Frinkiac REST API
 date: 2022-06-01
+order: 5
 featured: false
 internal_only: false
 category: API

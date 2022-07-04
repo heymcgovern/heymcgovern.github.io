@@ -1,6 +1,7 @@
 ---
 title: New app release content
 date: 2022-07-01
+order: 110
 featured: false
 internal_only: true
 category: Technical
