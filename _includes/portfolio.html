@@ -1,0 +1,141 @@
+<div class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-3" data-masonry='{"percentPosition": true }'>
+      {% for item in site.portfolio %}
+        {% if item.featured %}
+          <div class="col-lg-8 col-md-12">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <img src="{{ item.image.full | relative_url }}" style="height: 100%; width: 100%; object-fit: cover;" class="rounded-start" alt="{{ item.image.title }}">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <h5 class="card-title">{{ item.title }}</h5>
+                    <p class="card-text">{{ item.description }}</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <strong class="fw-semibold">With:</strong>
+                      {% assign elipsis_flag = false %}
+                      {% if item.stakeholders.size > 3 %}
+                        {% assign elipsis_flag = true %}
+                      {% endif %}
+                      {% for stakeholder in item.stakeholders | limit:3 %}
+                        {% if forloop.last or forloop.index == 3 %}
+                          {% if elipsis_flag == true %}
+                            {{ stakeholder | strip | append:"..." }}
+                          {% else %}
+                            {{ stakeholder }}
+                          {% endif %}
+                        {% else %}
+                          {{ stakeholder | strip | append:", " }}
+                        {% endif %}
+                      {% endfor %}
+                    </li>
+                    <li class="list-group-item">
+                      <strong class="fw-semibold">Using:</strong>
+                      {% assign elipsis_flag = false %}
+                      {% if item.tools.size > 3 %}
+                        {% assign elipsis_flag = true %}
+                      {% endif %}
+                      {% for tool in item.tools | limit:3 %}
+                        {% if forloop.last or forloop.index == 3 %}
+                          {% if elipsis_flag == true %}
+                            {{ tool | strip | append:"..." }}
+                          {% else %}
+                            {{ tool }}
+                          {% endif %}
+                        {% else %}
+                          {{ tool | strip | append:", " }}
+                        {% endif %}
+                      {% endfor %}
+                    </li>
+                    <li class="list-group-item">
+                      <strong class="fw-semibold">For:</strong>
+                      {{ item.customer }}
+                    </li>
+                  </ul>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <small class="text-muted">{{ item.date | date:"%b %Y" }}</small>
+                      <p class="mb-0">
+                        <a role="button" href="{{ item.url }}" class="btn btn-sm btn-outline-secondary">
+                          Get info
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% else %}
+          <div class="col-xs-12 col-md-6 col-lg-4">
+            <div class="card">
+              {% if item.image.thumb %}
+                <img src="{{ item.image.thumb | relative_url }}" class="card-img-top" alt="{{ item.image.alt }}">
+              {% endif %}
+              <div class="card-body">
+                <h5 class="card-title">{{ item.title }}</h5>
+                <p class="card-text">{{ item.description }}</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <strong class="fw-semibold">With:</strong>
+                  {% assign elipsis_flag = false %}
+                  {% if item.stakeholders.size > 2 %}
+                    {% assign elipsis_flag = true %}
+                  {% endif %}
+                  {% for stakeholder in item.stakeholders | limit:2 %}
+                    {% if forloop.last or forloop.index == 2 %}
+                      {% if elipsis_flag == true %}
+                        {{ stakeholder | strip | append:"..." }}
+                      {% else %}
+                        {{ stakeholder }}
+                      {% endif %}
+                    {% else %}
+                      {{ stakeholder | strip | append:", " }}
+                    {% endif %}
+                  {% endfor %}
+                </li>
+                <li class="list-group-item">
+                  <strong class="fw-semibold">Using:</strong>
+                  {% assign elipsis_flag = false %}
+                  {% if item.tools.size > 2 %}
+                    {% assign elipsis_flag = true %}
+                  {% endif %}
+                  {% for tool in item.tools | limit:2 %}
+                    {% if forloop.last or forloop.index == 2 %}
+                      {% if elipsis_flag == true %}
+                        {{ tool | strip | append:"..." }}
+                      {% else %}
+                        {{ tool }}
+                      {% endif %}
+                    {% else %}
+                      {{ tool | strip | append:", " }}
+                    {% endif %}
+                  {% endfor %}
+                </li>
+                <li class="list-group-item">
+                  <strong class="fw-semibold">For:</strong>
+                  {{ item.customer }}
+                </li>
+              </ul>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">{{ item.date | date:"%b %Y" }}</small>
+                  <p class="mb-0">
+                    <a role="button" href="{{ item.url }}" class="btn btn-sm btn-outline-secondary">
+                      Get info
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,145 @@
+---
+layout: default
+---
+<section class="py-3 text-center container">
+  <div class="row py-lg-5">
+    <div class="col-md-8 mx-auto">
+      <h1 class="pt-4">{{ page.title }}</h1>
+      <p class="lead text-muted">{{ page.description }}</p>
+      {% if page.samples %}
+        {% if page.samples.size > 1 %}
+          <div class="btn-group">
+            {% for sample in page.samples %}
+              {% if forloop.first %}
+                {% if sample.type == "link" %}
+                  <a class="btn btn-secondary" href="{{ sample.link }}" target="_blank" role="button">
+                    🌍 {{ sample.title }}
+                  </a>
+                {% elsif sample.type == "download" %}
+                  <a class="btn btn-secondary" href="{{ sample.link | relative_url }}" target="_blank" role="button">
+                    📥 {{ sample.title }}
+                  </a>
+                {% endif %}
+                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+              {% else %}
+                <li>
+                  {% if sample.type == "link" %}
+                    <a class="dropdown-item" href="{{ sample.link }}" target="_blank">
+                      🌍 {{ sample.title }}
+                    </a>
+                  {% elsif sample.type == "download" %}
+                    <a class="dropdown-item" href="{{ sample.link | relative_url }}" target="_blank">
+                      📥 {{ sample.title }}
+                    </a>
+                  {% endif %}
+                </li>
+                {% if forloop.last %}
+                  </ul>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% else %}
+          {% for sample in page.samples %}
+            {% if sample.type == "link" %}
+              <a class="btn btn-secondary" href="{{ sample.link }}" target="_blank" role="button">
+                🌍 {{ sample.title }}
+              </a>
+            {% elsif sample.type == "download" %}
+              <a class="btn btn-secondary" href="{{ sample.link | relative_url }}" target="_blank" role="button">
+                📥 {{ sample.title }}
+              </a>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="row g-4">
+    <div class="col-md-5">
+      {% if page.video %}
+        <div class="ratio ratio-16x9 img-thumbnail">
+          <video class="ratio ratio-16x9" poster="{{ page.image.full | relative_url }}" controls autoplay loop>
+            <source src="{{ page.video.mp4 | relative_url }}" type="video/mp4">
+          </video>
+        </div>
+      {% else %}
+        {% if page.image.full %}
+          {% if page.samples %}
+            <a href="{{ page.samples.first.link | relative_url }}" target="_blank">
+              <img class="img-fluid img-thumbnail mb-2" src="{{ page.image.full | relative_url }}" alt="{{ page.image.alt }}">
+            </a>
+          {% else %}
+            <a href="{{ page.image.full | relative_url }}" target="_blank">
+              <img class="img-fluid img-thumbnail mb-2" src="{{ page.image.full | relative_url }}" alt="{{ page.image.alt }}">
+            </a>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+      <table class="table table-borderless">
+        <tbody>
+          {% if page.stakeholders %}
+            <tr>
+              <th scope="row">🤝 With:</th>
+              <td>
+                <ul class="list-unstyled">
+                  {% for stakeholder in page.stakeholders %}
+                    <li>{{ stakeholder }}</li>
+                  {% endfor %}
+                  </ul>
+              </td>
+            </tr>
+          {% endif %}
+          {% if page.tools %}
+            <tr>
+              <th scope="row">🧰 Using:</th>
+              <td>
+                <ul class="list-unstyled">
+                  {% for tool in page.tools %}
+                    <li>{{ tool }}</li>
+                  {% endfor %}
+                </ul>
+              </td>
+            </tr>
+          {% endif %}
+          {% if page.customer %}
+            <tr>
+              <th scope="row">🎁 For:</th>
+              <td colspan="2">{{ page.customer }}</td>
+            </tr>
+          {% endif %}
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-7">
+      {% if page.internal_only %}
+        <div class="alert alert-secondary d-flex align-items-center" role="alert">
+          <div class="flex-shrink-0 me-3 fs-4">
+            🔐
+          </div>
+          <div>
+            <strong>This was an internal project, so I can't share full details.</strong><br>
+            Screenshots and samples include made-up data that's representative of the project that I worked on.
+          </div>
+        </div>
+      {% endif %}
+      {{ content }}
+      {% if page.impact %}
+        <div>
+          <h4 class="pt-3">Impact</h4>
+          {% for impact in page.impact %}
+            <ul class="list-unstyled">
+              <li>{{ impact }}</li>
+            </ul>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

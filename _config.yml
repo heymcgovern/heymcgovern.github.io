@@ -1,0 +1,18 @@
+title: Michael McGovern
+lang: en-US
+description: >-
+  Hello! 👋 I create guides, images, videos, and other technical content that's
+  engaging and exciting. I love docs-as-code and creating processes that help
+  everyone work better together. You can trust me to take on new product or
+  feature docs, as well as reviews and revamps.
+# baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://heymcgovern.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: heymcgovern
+github_username:  heymcgovern
+permalink: pretty
+
+# Build settings
+theme: jekyll-bootstrap-theme
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

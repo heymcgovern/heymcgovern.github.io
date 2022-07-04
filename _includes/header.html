@@ -1,0 +1,29 @@
+{% assign portfolio_class = "nav-link" %}
+{% assign about_class = "nav-link" %}
+{% assign contact_class = "nav-link" %}
+{% if page.url contains "portfolio" or page.url == "/" %}
+  {% assign portfolio_class = "nav-link active" %}
+{% elsif page.url contains "/about/" %}
+  {% assign about_class = "nav-link active" %}
+{% elsif page.url contains "/contact/" %}
+  {% assign contact_class = "nav-link active" %}
+{% endif %}
+
+<header class="d-flex justify-content-center py-3 bg-light">
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a href="{{ "/" | relative_url }}" class="{{ portfolio_class }}">📝 Portfolio</a>
+    </li>
+    {% comment %}
+      <li class="nav-item">
+        <a href="{{ "about/" | relative_url }}" class="{{ about_class }}">💁 About</a>
+      </li>
+      <li class="nav-item">
+        <a href="{{ "contact/" | relative_url }}" class="{{ contact_class }}">💬 Contact</a>
+      </li>
+    {% endcomment %}
+    <li class="nav-item">
+      <a href="https://linkedin.com/in/heymcgovern" target="_blank" class="nav-link">💬 LinkedIn</a>
+    </li>
+  </ul>
+</header>
