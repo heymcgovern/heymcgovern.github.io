@@ -10,5 +10,15 @@
     {{ site.title }}
   </title>
   <link rel="stylesheet" href="{{ '/assets/css/bootstrap-theme.css' | relative_url }}">
+  <style>
+    /* Twemoji */
+    img.emoji {
+      height: 1em;
+      width: 1em;
+      margin: 0 .05em 0 .1em;
+      vertical-align: -0.1em;
+      pointer-events: none;
+    }
+  </style>
   {%- feed_meta -%}
 </head>
