@@ -12,7 +12,8 @@ github_username:  heymcgovern
 permalink: pretty
 
 # Build settings
-theme: jekyll-bootstrap-theme
+# theme: jekyll-bootstrap-theme
+remote_theme: jonaharagon/jekyll-bootstrap-theme
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
