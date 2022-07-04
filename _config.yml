@@ -16,3 +16,32 @@ theme: jekyll-bootstrap-theme
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+collections:
+  # Manually ordered this collection so I can push up stuff that's more
+  # interesting. Also make sure items slot together nicely.
+  portfolio:
+    output: true
+    order:
+      - frinkiac-rest-api.md
+      - lua-scripted-api-documentation.md
+      - agile-transformation-resources.md
+      - technical-blog-posts.md
+      - in-app-release-notes-changelog.md
+      - liquid-syntax-reference.md
+      - feature-roundup-email-newsletter.md
+      - game-shop-documentation.md
+      - lua-tool-knowledge-base.md
+      - current-rms-knowledge-base.md
+      - character-art-pipeline-documentation.md
+      - covid-19-comms.md
+      - current-rms-support-videos.md
+      - new-tech-workshops.md
+      - lockwood-intranet.md
+      - product-pitches-user-stories.md
+      - it-support-guides.md
+      - internal-training-courses.md
+      - policies.md
+      - tech-writing-portfolio.md
+      - ui-api.md
+      - new-app-release.md
