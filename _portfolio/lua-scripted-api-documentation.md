@@ -39,7 +39,7 @@ impact:
   - 👩‍💻 Docs live near the code, making it easy for devs to create or update docs as they work.
   - 🔀 Interoperable JSON format meant we could remix docs—even bringing code complete to Visual Studio Code!
   - 💪 Greater awareness of the power of the platform among leadership and other teams.
-  - 🐛 Highlighted inconsistencies and bugs, filling a backlog of fixes.
+  - 🐛 Highlighted inconsistencies and bugs, filling a backlog with fixes.
 layout: portfolio-item
 ---
 We have an internal platform where folks can create content for the game. All the complexity of Unity is taken away and replaced by a lovely Lua API. The only problem was that there were no docs.

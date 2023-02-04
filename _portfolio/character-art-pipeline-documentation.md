@@ -27,7 +27,7 @@ tools:
 impact:
   - 🧠 Reduced the risk of critical knowledge leaving the business.
   - 🤑 Kept a key source of revenue online.
-  - 🚀 Let us to bring a new studio of artists onboard quickly.
+  - 🚀 Let us bring a new studio of artists onboard quickly.
   - 💡 Identified areas of improvement, resulting in the launch of new tooling and scripts.
   - 🗺️ Joined the character art pipeline with the fashion, QA, and publishing pipelines so we could see the bigger picture.
 layout: portfolio-item

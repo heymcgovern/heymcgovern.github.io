@@ -8,7 +8,7 @@ customer: Lockwood Publishing
 description: >
   A central location for everything about the company, so we could continue to scale and work together effectively.
 image:
-  alt: Screenshot of of Lockwood Intranet homepage
+  alt: Screenshot of Lockwood Intranet homepage
   full: assets/img/intranet.png
   thumb: assets/img/intranet.png
 stakeholders:

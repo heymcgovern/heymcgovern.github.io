@@ -34,6 +34,6 @@ I worked with the team to create a content plan that included the most popular s
 
 All our suppliers had good knowledge bases, so I kept the guides high-level and linked out to articles. Our guides instead covered best practices and company-specific ways of working. For example, that Zoom guide included links to our fun branded backgrounds.
 
-The onboarding process went from a long email with lots of step-by-step instructions to a short doc with links to our IT guides. As a result, the team were able to get folks onboarded much faster and with fewer follow up calls and tickets.
+The onboarding process went from a long email with lots of step-by-step instructions to a short doc with links to our IT guides. As a result, the team were able to get folks onboarded much faster and with fewer follow-up calls and tickets.
 
 The IT guides are living documents. The structure and templates that I created mean the team can hop in and create or edit guides easily

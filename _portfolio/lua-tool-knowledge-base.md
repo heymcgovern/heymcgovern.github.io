@@ -7,7 +7,7 @@ internal_only: true
 category: Developer
 customer: Lockwood Publishing
 description: >
-  A one stop shop for everything you need to get started with an internal platform for creating content.
+  A one-stop shop for everything you need to get started with an internal platform for creating content.
 image:
   alt: Screenshot of sample "Get Started" page
   full: assets/img/scripted-platform-knowledge-base-page.png
@@ -38,7 +38,7 @@ People had heard about it from company presentations, but had no idea how to get
 
 Existing docs were written by devs, for devs. Onboarding new folks typically involved a few Zoom calls.
 
-I reviewed existing documentation, then created a new knowledge base for the platform. It was a one stop shop with everything folks need to get going, including:
+I reviewed existing documentation, then created a new knowledge base for the platform. It was a one-stop shop with everything folks need to get going, including:
 
 * Task based guides for things like install and config.
 * Step-by-step tutorials that walk folks through creating content from scratch.

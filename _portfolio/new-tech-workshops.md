@@ -25,7 +25,7 @@ Docs are great, but sometimes you can't beat a hands-on demo. They're perfect fo
 
 Leaning on my experience running remote training sessions and webinars, I ran internal workshops to showcase new tech. I chatted with internal teams who use our tools to build a schedule of workshops. I ran each workshop over Zoom.
 
-The delivery would vary depending on the tech we were showcasing. Sometimes I'd hop into an IDE and write a script or run a live demo, other times I'd put together a PowerPoint and walk through they points.
+The delivery would vary depending on the tech we were showcasing. Sometimes I'd hop into an IDE and write a script or run a live demo, other times I'd put together a PowerPoint and walk through key points.
 
 As a distributed remote team, I recorded workshops and edited them. I made all recordings available online, with links to extra resources and a space to ask questions or leave comments.
 

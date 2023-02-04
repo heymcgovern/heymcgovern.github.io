@@ -22,7 +22,7 @@ tools:
   - Liquid syntax
 layout: portfolio-item
 ---
-Lots of folks in tech know they should have a portfolio, but it's often time consuming or expensive to set one up.
+Lots of folks in tech know they should have a portfolio, but it's often time-consuming or expensive to set one up.
 
 I built this site using Jekyll and GitHub Pages. I created templates myself, using [my knowledge of Liquid syntax]({{ "portfolio/liquid-syntax-reference" | relative_url }}) and HTML & CSS.
 

@@ -41,7 +41,7 @@ impact:
   - ✨ Fed into a series of blog posts about "the new normal," where we showcased sales and admin features.
 layout: portfolio-item
 ---
-Current RMS only serves events, AV, and production companies. COVID-19 hit our customer base hard, wiping months's worth of orders almost overnight.
+Current RMS only serves events, AV, and production companies. COVID-19 hit our customer base hard, wiping months' worth of orders almost overnight.
 
 I worked with marketing and leadership to create content for our COVID-19 response, including:
 

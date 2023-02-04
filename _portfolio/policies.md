@@ -20,7 +20,7 @@ tools:
 impact:
   - 👩‍👩‍👧‍👧 Made policy documents clear and concise, using plain English so everyone can understand.
   - 🤝 Made sure that policies used inclusive language and were welcoming to all.
-  - ⚡ Created a template to speed up creation of policies in future.
+  - ⚡ Created a template to speed up creation of policies in the future.
   - 1️⃣ Centralized policy documents on the intranet.
   - 🤔 Identified areas where we're lacking clear guidance or policies.
 layout: portfolio-item

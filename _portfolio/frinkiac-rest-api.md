@@ -7,7 +7,7 @@ internal_only: false
 category: API
 customer: Me!
 description: >
-  For all of The Simpsons fans out there, docs for the unofficial Frinkiac API.
+  For all The Simpsons fans out there, docs for the unofficial Frinkiac API.
 image:
   alt: Screenshot of Frinkiac API docs home
   full: assets/img/frinkiac.png

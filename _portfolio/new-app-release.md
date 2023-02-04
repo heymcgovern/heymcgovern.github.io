@@ -27,6 +27,6 @@ They asked me to help with docs for a new internal app that showcases some of th
 
 I slotted into the team and created guides that explained what the app did and how it works. I included screenshots and short videos in guides that explained how to do common tasks.
 
-As a prototype app, the UI was a bit rough around the edges so docs were essential to surfacing some of the features. It contributed to a smooth launch, as we had docs on how to download and install.
+As a prototype app, the UI was a bit rough around the edges so docs were essential to surfacing the features. It contributed to a smooth launch, as we had docs on how to download and install.
 
 As part of the process, I re-structured the release content space and created templates to speed up future releases.
