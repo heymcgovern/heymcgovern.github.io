@@ -19,5 +19,16 @@
         twemoji.parse(document.body, { folder: "svg", ext: ".svg" });
       };
     </script>
+    <script type="text/javascript">
+     var $grid = $('#masonry').masonry({
+       itemSelector: '.col',
+       percentPosition: true
+     });
+
+     // layout Masonry after each image loads
+     $grid.imagesLoaded().progress( function() {
+       $grid.masonry();
+     });
+    </script>
   </body>
 </html>
